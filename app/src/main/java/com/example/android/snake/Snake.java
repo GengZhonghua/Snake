@@ -48,8 +48,8 @@ public class Snake extends Activity {
     private SnakeView mSnakeView;
 
     /**
-     * Called when Activity is first created. Turns off the title bar, sets up the content views,
-     * and fires up the SnakeView.
+     * Called when Activity is first created.
+     * Turns off the title bar, sets up the content views, and fires up the SnakeView.
      * 
      */
     @Override
@@ -84,7 +84,7 @@ public class Snake extends Activity {
                     float y = event.getY() / v.getHeight();
 
                     // Direction will be [0,1,2,3] depending on quadrant
-                    int direction = 0;
+                    int direction;
                     direction = (x > y) ? 1 : 0;
                     direction |= (x > 1 - y) ? 2 : 0;
 
@@ -115,8 +115,8 @@ public class Snake extends Activity {
     }
 
     /**
-     * Handles key events in the game. Update the direction our snake is traveling based on the
-     * DPAD.
+     * Handles key events in the game.
+     * Update the direction our snake is traveling based on the DPAD.
      *
      */
     @Override
